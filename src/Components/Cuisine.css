@@ -1,0 +1,78 @@
+.Cuisine_container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Align cards in row */
+}
+
+@media (max-width: 768px) {
+  .Cuisine_container {
+    justify-content: center; /* Center cards on smaller screens */
+  }
+
+  .Cuisine_card {
+    width: calc(50% - 10px); /* Adjusted width for 2 cards in a row on smaller screens */
+    margin-bottom: 20px; /* Increase margin between rows on smaller screens */
+  }
+
+  .Cuisine_card:nth-child(2n) {
+    margin-right: 0; /* Remove margin for the second card in each row */
+  }
+}
+
+.Cuisine_card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(33.33% - 13.33px); /* Adjusted width for 3 cards in a row */
+  margin-right: 20px; /* Space between cards */
+  color: purple;
+  text-align: center; /* Center content */
+  position: relative; /* Ensure relative positioning for the image */
+  overflow: hidden; /* Hide overflow to maintain card appearance */
+  border: 2px solid black;
+}
+
+.Cuisine_card:nth-child(3n) { 
+  margin-right: 0; /* Remove margin for the third card in each row */
+}
+
+.Cuisine_card img {
+  width: 100%; /* Make images fill the entire width of the card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Match card's border radius */
+}
+
+.Cuisine_card h3 {
+  margin-top: 10px;
+  font-size: larger;
+}
+
+.Cuisine_card a {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.Cuisine_card a:hover {
+  background-color: #0056b3;
+}
+
+.cuisines_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h2{
+  font-size: 60px;
+  color :purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

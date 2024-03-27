@@ -1,0 +1,35 @@
+.home1 {
+    position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  /* background-color: bisque; */
+  background: cover;
+}
+
+.background-image {
+    width: 30%;
+    height: 98%;  
+    margin-top: 20px ;
+    border-radius: 30px;
+    margin-left: 30px;
+    border:15px solid rgb(231, 197, 6) ;
+    /* border:2px solid whitesmoke ; */
+}
+
+.quote {
+
+    opacity: 1;
+}
+span{
+    color: orange;
+}
+.home2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    /* background-color: bisque; */
+    background: cover;
+}
+
